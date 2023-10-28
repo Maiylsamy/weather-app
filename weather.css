@@ -3,9 +3,16 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    
 }
 body{
-    background-color: orangered;
+    background-image: linear-gradient(-90deg,rgb(2, 136, 2,0.1),rgba(0, 212, 28, 0.5));
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
    
 }
 .card{
@@ -51,7 +58,7 @@ body{
 .search button img{
     border-radius: 5px;
 }
-.weather-icon{
+#weathericon{
     margin: 30px;
     width: 170px;
 }
@@ -72,10 +79,11 @@ body{
     margin-top: 50px;
 }
 .col{
- align-items: center;
+ align-items: center; 
  text-align:left;   
   justify-content: space-between;
  align-items: center;
+ padding: 12px 9px;
 }
 .col img{
     width: 40px;
@@ -85,4 +93,14 @@ body{
     font-size: 80px;
     font-style: oblique;
 
+}.weather{
+    display: none;
+}
+.error{
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: none;
 }
